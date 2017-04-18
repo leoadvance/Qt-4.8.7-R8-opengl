@@ -27,10 +27,6 @@
 
 #ifndef QT_BOOTSTRAPPED
 
-#ifndef Q_BACKINGSTORE_SUBSURFACES
-# define Q_BACKINGSTORE_SUBSURFACES
-#endif
-
 #if defined(QT_NO_ALSA) && defined(QT_ALSA)
 # undef QT_NO_ALSA
 #elif !defined(QT_NO_ALSA) && !defined(QT_ALSA)
@@ -47,6 +43,12 @@
 # undef QT_NO_DBUS
 #elif !defined(QT_NO_DBUS) && !defined(QT_DBUS)
 # define QT_NO_DBUS
+#endif
+
+#if defined(QT_NO_EGL) && defined(QT_EGL)
+# undef QT_NO_EGL
+#elif !defined(QT_NO_EGL) && !defined(QT_EGL)
+# define QT_NO_EGL
 #endif
 
 #if defined(QT_NO_EXCEPTIONS) && defined(QT_EXCEPTIONS)
@@ -107,6 +109,12 @@
 # undef QT_NO_NIS
 #elif !defined(QT_NO_NIS) && !defined(QT_NIS)
 # define QT_NO_NIS
+#endif
+
+#if defined(QT_NO_OPENGL) && defined(QT_OPENGL)
+# undef QT_NO_OPENGL
+#elif !defined(QT_NO_OPENGL) && !defined(QT_OPENGL)
+# define QT_NO_OPENGL
 #endif
 
 #if defined(QT_NO_OPENSSL) && defined(QT_OPENSSL)
@@ -257,18 +265,6 @@
 # undef QT_NO_XMLPATTERNS
 #elif !defined(QT_NO_XMLPATTERNS) && !defined(QT_XMLPATTERNS)
 # define QT_NO_XMLPATTERNS
-#endif
-
-#if defined(QT_OPENGL_ES) && defined(QT_NO_OPENGL_ES)
-# undef QT_OPENGL_ES
-#elif !defined(QT_OPENGL_ES) && !defined(QT_NO_OPENGL_ES)
-# define QT_OPENGL_ES
-#endif
-
-#if defined(QT_OPENGL_ES_2) && defined(QT_NO_OPENGL_ES_2)
-# undef QT_OPENGL_ES_2
-#elif !defined(QT_OPENGL_ES_2) && !defined(QT_NO_OPENGL_ES_2)
-# define QT_OPENGL_ES_2
 #endif
 
 #if defined(QT_QWS_DEPTH_1) && defined(QT_NO_QWS_DEPTH_1)

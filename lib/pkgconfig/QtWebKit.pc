@@ -13,7 +13,7 @@ Name: Qtwebkit
 Description: Qtwebkit Library
 Version: 4.9.4
 Libs: -L${libdir} -lQtWebKit 
-Libs.private: -L/home/leo/Qt/Qt-4.8.7-R8-opengles/lib -L../../WebCore/release -L../../JavaScriptCore/release  -lwebcore -L/home/leo/Qt/Qt-4.8.7-R8-opengles/lib -L/home/leo/Qt/Qt-4.8.7-R8-opengles/mkspecs/linux-arm-gnueabi-g++/lib -ljscore -lQtGui -lEGL -lQtNetwork -lQtCore -lpthread   
+Libs.private: -L/home/leo/Qt/Qt-4.8.7-R8-opengles/lib -L../../WebCore/release -L../../JavaScriptCore/release  -lwebcore -L/home/leo/Qt/Qt-4.8.7-R8-opengles/lib -ljscore -lQtGui -lQtNetwork -lQtCore -lpthread   
 Cflags: -DQT_SHARED -I/home/leo/Qt/Qt-4.8.7-R8-opengles/include -I${includedir}
 Requires: QtCore QtGui QtNetwork
 

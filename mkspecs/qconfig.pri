@@ -2,7 +2,7 @@
 CONFIG +=  cross_compile shared def_files_disabled no_mocdepend release stl qt_no_framework
 QT_ARCH = arm
 QT_EDITION = OpenSource
-QT_CONFIG +=  minimal-config small-config medium-config large-config full-config no-pkg-config accessibility egl opengl opengles2 shared embedded reduce_exports ipv6 clock-gettime clock-monotonic mremap getaddrinfo ipv6ifname getifaddrs inotify png freetype zlib concurrent multimedia audio-backend script scripttools declarative release
+QT_CONFIG +=  minimal-config small-config medium-config large-config full-config no-pkg-config accessibility shared embedded reduce_exports ipv6 clock-gettime clock-monotonic mremap getaddrinfo ipv6ifname getifaddrs inotify png freetype zlib concurrent multimedia audio-backend script scripttools declarative release
 
 #versioning
 QT_VERSION = 4.8.7

@@ -13,7 +13,7 @@ Name: Qtdeclarative
 Description: Qtdeclarative Library
 Version: 4.8.7
 Libs: -L${libdir} -lQtDeclarative 
-Libs.private: -L/home/leo/Qt/Qt-4.8.7-R8-opengles/lib  -lQtScript -L/home/leo/Qt/Qt-4.8.7-R8-opengles/lib -lQtSql -lQtGui -L/home/leo/Qt/Qt-4.8.7-R8-opengles/mkspecs/linux-arm-gnueabi-g++/lib -lEGL -lQtNetwork -lQtCore -lpthread -lrt  
+Libs.private: -L/home/leo/Qt/Qt-4.8.7-R8-opengles/lib  -lQtScript -L/home/leo/Qt/Qt-4.8.7-R8-opengles/lib -lQtSql -lQtGui -lQtNetwork -lQtCore -lpthread -lrt  
 Cflags: -DQT_SHARED -I/home/leo/Qt/Qt-4.8.7-R8-opengles/include -I${includedir}
 Requires: QtCore QtGui
 
